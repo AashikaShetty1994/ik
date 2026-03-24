@@ -1,4 +1,4 @@
-# Understanding Recursion using Factorials and Combinatorics
+# Recursion Part 2
 
 ## 1. Understanding Recursion through Simple Examples
 - Recursion solves problems by breaking them into smaller subproblems of the same type.
