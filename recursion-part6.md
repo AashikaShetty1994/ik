@@ -15,6 +15,23 @@ def combination(n, k):
 - Closely mirrors Pascal’s Triangle recursion.
 - Time: O(2^N) without memo.
 
+## 2.1 memoized combination
+```python
+def combination_memo(n, k, memo=None):
+    if memo is None:
+        memo = {}
+    key = (n, k)
+    if key in memo:
+        return memo[key]
+    if k == 0 or k == n:
+        memo[key] = 1
+    else:
+        memo[key] = combination_memo(n - 1, k - 1, memo) + combination_memo(n - 1, k, memo)
+    return memo[key]
+```
+- Time: O(n*k) with memo.
+- Avoids exponential duplicate subproblems.
+
 ## 3. Pascal’s Triangle
 - Row n gives C(n, 0)...C(n, n).
 - Each entry equals sum of two entries above.
