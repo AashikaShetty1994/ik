@@ -1,0 +1,21 @@
+- **Recursion As Lazy Manager**
+  - **Counterparts**
+    - Loops: Iteration (e.g., doing 30 pushups)
+    - Conditionals: Decisions (e.g., carrying umbrella if it rains)
+    - Top-Down Design: Breaking tasks (e.g., baking a cake)
+  - **Stepwise Refinement**
+    - Break complex problems into simpler sub-problems
+    - Form hierarchy of subtasks
+  - **Recursion Definition**
+    - Reduce to smaller self-similar problems
+    - Analogy: Fundraising Manager
+      - Raise $100k → 10 volunteers for $10k each
+      - Each finds 10 more for $1k
+      - Until $100 (base case)
+  - **Pseudocode**
+    - Fundraising: if n ≤ 100 collect directly, else divide among 10
+    - General: if simple case solve directly, else recurse on subproblems
+  - **Conclusion**
+    - Think like lazy manager: delegate self-similar tasks
+    - Base case: solvable directly
+    - Reassemble results
